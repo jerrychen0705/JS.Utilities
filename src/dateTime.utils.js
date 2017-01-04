@@ -18,7 +18,7 @@ var dateTimeUtils = {};
             formatLength += yearFormat[0].length;
             var yearValue = value.getFullYear().toString();
             separator = format.substr(formatLength, 1);
-            isContains = contains(formatArray, separator);
+            isContains = inArray(formatArray, separator);
             if (isContains) {
                 separator = "";
             } else {
